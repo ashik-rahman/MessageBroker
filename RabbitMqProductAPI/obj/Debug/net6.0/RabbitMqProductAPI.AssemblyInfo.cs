@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RabbitMqProductAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e6be523c9ee109ac762b3bdcc2b99da8feae7f4")]
 [assembly: System.Reflection.AssemblyProductAttribute("RabbitMqProductAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RabbitMqProductAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
