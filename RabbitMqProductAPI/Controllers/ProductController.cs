@@ -38,12 +38,16 @@ namespace RabbitMqProductAPI.Controllers
         [HttpPut("updateproduct")]
         public Product UpdateProduct(Product product)
         {
-            return productService.UpdateProduct(product);
+            var productUpdate = productService.UpdateProduct(product);
+            _rabitMQProducer.SendProductMessage(productUpdate);
+            return productUpdate;
         }
         [HttpDelete("deleteproduct")]
         public bool DeleteProduct(int Id)
         {
-            return productService.DeleteProduct(Id);
+            var deleteResponse = productService.DeleteProduct(Id);
+            _rabitMQProducer.SendProductMessage(deleteResponse);
+            return deleteResponse;
         }
     }
 }
